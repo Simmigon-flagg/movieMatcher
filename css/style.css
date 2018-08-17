@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  /* Typography */
+  font-size: 18px;
+
+}
+
+h1,
+h2,
+h3 {
+  /* Typography */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.top{
+  background-color: rgb(97, 97, 143);
+  color: white;
+  text-align: center;
+  height: 100px;
+
+}
+/* Start all CSS below this line  */
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+
+ .streamingTitles {
+  max-width:05%;
+  height:auto;
+}
