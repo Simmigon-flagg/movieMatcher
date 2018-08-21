@@ -1,1 +1,1 @@
-alert("login.js");
+console.log("login.js");
