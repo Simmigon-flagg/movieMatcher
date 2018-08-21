@@ -1,1 +1,1 @@
-alert("signup.js");
+console.log("Signup");
