@@ -23,11 +23,7 @@ var database = firebase.database();
 
 // Initialize Firebase
 
-// Use the below initialValue
-var initialValue = 2;
 
-// Use the below variable clickCounter to keep track of the clicks.
-var clickCounter = initialValue;
 
 // --------------------------------------------------------------
 
@@ -72,6 +68,11 @@ let signIn = document.getElementById('signin');
 signIn.addEventListener('click', (e) => {
     let email = document.getElementById('inputEmail').value;
     let password = document.getElementById('inputPassword').value;
+    // Use the below initialValue
+    var initialValue = 2;
+
+    // Use the below variable clickCounter to keep track of the clicks.
+    var clickCounter = initialValue;
     e.preventDefault();
 
     database.ref().on("value", function (snapshot) {
@@ -98,14 +99,13 @@ signIn.addEventListener('click', (e) => {
     });
     $("#signin").on("click", function (e) {
 
-        alert("click");
-        alert(clickCounter);
+
+       
         // Reduce the clickCounter by 1
-        clickCounter--;
+        clickCounter++;
 
         // Alert User and reset the counter
         if (clickCounter === 0) {
-            alert("Phew! You made it! That sure was a lot of clicking.");
             clickCounter = initialValue;
         }
 
