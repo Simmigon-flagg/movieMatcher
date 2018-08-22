@@ -1,1 +1,1 @@
-alert("app.js");
+console.log("home.js");

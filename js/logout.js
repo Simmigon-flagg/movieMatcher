@@ -1,1 +1,1 @@
-alert("logout.js");
+console.log("logout.js");
