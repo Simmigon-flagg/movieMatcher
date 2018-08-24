@@ -28,12 +28,12 @@
 
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" value="admin@admin.com">
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" value="testing@tesing.com">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+            <input type="password" value="123456" class="form-control" id="inputPassword" placeholder="Password">
           </div>
           <!-- <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -52,8 +52,12 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
   <!-- Begin our custom JavaScript -->
-  <!-- Begin our custom JavaScript -->
+  <!-- Order matters here -->
+  <!-- 1 -->
+  <script src="database/users/user.js"></script>
+  <!-- 2 -->
   <script src="js/login.js"></script>
+  <!-- 3 -->
   <script src="js/signup.js"></script>
 
 
