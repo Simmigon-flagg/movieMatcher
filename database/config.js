@@ -1,11 +1,11 @@
 
 // Initialize Firebase
 var config = {
-    apiKey: "AIzaSyA4DnsmunTp-DWFIjWJ0NvZfSxIojCXUIU",
-    authDomain: "moviematcher-2909e.firebaseapp.com",
-    databaseURL: "https://moviematcher-2909e.firebaseio.com",
-    projectId: "moviematcher-2909e",
-    storageBucket: "moviematcher-2909e.appspot.com",
-    messagingSenderId: "411775304326"
+    apiKey: "AIzaSyCpeSR8na8AtM4YWRF84lfdZfozCNFILQs",
+    authDomain: "myfirebaseproject-b0fe7.firebaseapp.com",
+    databaseURL: "https://myfirebaseproject-b0fe7.firebaseio.com",
+    projectId: "myfirebaseproject-b0fe7",
+    storageBucket: "myfirebaseproject-b0fe7.appspot.com",
+    messagingSenderId: "504904408576"
 };
 firebase.initializeApp(config);
