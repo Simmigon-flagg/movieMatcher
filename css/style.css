@@ -1,9 +1,15 @@
 #banner {
-  background-image: url('../images/horror_banner.jpg');
+  background-image: url("../images/horror_banner.jpg");
   height: 50%;
   width: 100%;
   background-repeat: repeat;
 }
+
+#headerText {
+  color: aqua;
+  font: bolder;
+}
+
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   /* Typography */
