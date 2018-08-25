@@ -13,58 +13,49 @@ function searchMovie(movie) {
 
 }).then(function (response) {
 
-  // $("#movies").text(JSON.stringify(response));
-  console.log(response);
-  console.log(response.Runtime);
+     // $("#movies").text(JSON.stringify(response));
+     console.log(response);
+     console.log(response.Runtime);
+   
+     $("#buttons-view").html("");
+     var movieResults = response.results;
+     console.log(movieResults);
 
-  // Creating a div to hold the movie
-    var movieDiv = $("<div class='movie'>");
+     var createdHtmlString = "";
 
-    // Creating an element to have the title displayed
-    var movieTitle = response.results.name;
-    var picture = response.results.picture;
-    var locationName =resposne.results.locations.name;
-    var locationUrl =resposne.results.locations.name.url;
-    var locationIcon =resposne.results.locations.name.icon;
+     for (i=0; i < movieResults.length; i++) {
+        var movieList = movieResults[i];
 
-    
-    //Title of move
-    var pOne = $("<p>").text("Title: " + movieTitle);
-    movieDiv.append(pOne);
+//      picture  = results.picture;
+ //        name = results.name;
       
-    //picture of movie
-    var pTwo = $("<img>").attr("src " + picture);
-    movieDiv.append(pTwo);
-    
-    // location of movie avaiablle
-    var pThree = $("<p>").text("Location: " + locationName);
-    // appending location
-    movieDiv.append(pThree);
-    
-    //location of movie url available
-    var pFour = $("<p>").attr("Location Url", locationUrl);
-    movieDiv.append(pFour);
+       //For each movie object, create a piece of HTML
+       var htmlString = "<div class='movieInfo'> " +
+           "<a href='http://imdb.com/title/" +
+           movieList['picture' ] +
+           "/'><img id='posters' src=" +
+           movieList['picture'] +
+           "></img></a>" +
+           "<div class='title'>" +
+           movieList['name']+
+           "</div>" +
+           "</div>"
+       var createdHtmlString = createdHtmlString +  htmlString;
+     }
+      var createdHtmlString;
+     $("#buttons-view").append(createdHtmlString);
 
-    //icon of location available
-    var pFive = $("<img>").attr("src", locationIcon);
-    movieDiv.append(pFive);
+   });
 
-    // Putting the entire movie above the previous movies
-    $(".streamingTitles").empty();
-    $(".streamingTitles").prepend(movieDiv);
-  });
-
-}
-
-
-  // Event handler for user clicking the select-artist button
-  $("#search").on("click", function(event) {
-    // Preventing the button from trying to submit the form
-    event.preventDefault();
-    // Storing the artist name
-    var inputMovie = $("#searchterm").val().trim();
-
-    // Running the searchBandsInTown function (passing in the artist as an argument)
-    searchMovie(inputMovie);
-  });
-
+ }  
+   
+     // Event handler for user clicking the select movie button
+     $("#search").on("click", function(event) {
+       // Preventing the button from trying to submit the form
+       event.preventDefault();
+       // Storing the artist name
+       var inputMovie = $("#searchterm").val().trim();
+   
+       // Running the  function (passing in the movie as argument)
+       searchMovie(inputMovie);
+     });

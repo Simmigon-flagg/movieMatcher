@@ -11,7 +11,7 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 	<!-- CUSTOM STYLES -->
-	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
   <!-- Firebase Reference -->
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
   <!-- Google Fonts -->
@@ -44,49 +44,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
-      <ul class="nav navbar-nav">
-        <li><a href="#" class="nowPlaying">Now Playing</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Genres<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#" class="action" id="action">Action</a></li>
-            <li><a href="#" class="adventure" id="adventure">Adventure</a></li>
-            <li><a href="#" class="animation" id="animation">Animation</a></li>
-            <li><a href="#" class="comedy" id="comedy">Comedy</a></li>
-            <li><a href="#" class="crime" id="crime">Crime</a></li>
-            <li><a href="#" class="drama" id="drama">Drama</a></li>
-            <li><a href="#" class="family" id="family">Family</a></li>
-            <li><a href="#" class="fantasy" id="fantasy">Fantasy</a></li>
-            <li><a href="#" class="history" id="history">History</a></li>
-            <li><a href="#" class="music" id="music">Music</a></li>
-            <li><a href="#" class="romance" id="romance">Romance</a></li>
-            <li><a href="#" class="scifi" id="scifi">Science Fiction</a></li>
-            <li><a href="#" class="thriller" id="thriller">Thriller</a></li>
-          </ul>
-        </li>
-        <li class="gitHubLogo">
-          <a href="https://github.com/Simmigon-flagg/movieMatcher" target="_blank">GitHub Repo</a>
-        </li>
-        <!-- <li><a href="#">Specials</a></li> -->
-   <!--      <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">VIP Rewards Card</a></li>
-            <li><a href="#">Specials and Promotions</a></li>
-            <li><a href="#">Gift Cards</a></li>
-          </ul>
-        </li> -->
-        <!-- <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Locations<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Atlanta</a></li>
-            <li><a href="#">Buckhead</a></li>
-            <li><a href="#">Midtown</a></li>
-            <li><a href="#">Marietta</a></li>
-          </ul>
-        </li> -->
-      </ul>
+    </ul>
       <ul class="nav navbar-nav navbar-right">
         <form class="navbar-form navbar-right searchForm">
 	        <div class="form-group">
@@ -102,13 +60,16 @@
   <div class="container">
     <p></p>
   </div>
-  <div id="buttons-view"></div>
+
+  <hr>
+  <div class="container">
     <!-- Row 1  -->
     <div class="row">
-      <div class="col-lg-3">
-        <a href="https://placeholder.com"><img src="https://via.placeholder.com/250x150"></a>
+      <div class="col-lg-12" id="banner">
+         <h1 class="display-4" id="headerText">Movie Matcher</h1>
       </div>
     </div>
+    
 
     <hr>
     <!-- Row 3  -->
@@ -157,7 +118,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="../database/config.js"></script>
   <!-- Begin our custom JavaScript -->
-  <script src="api.js"></script>
+  <script src="../API/api.js"></script>
 
 
 

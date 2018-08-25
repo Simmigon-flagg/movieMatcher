@@ -1,15 +1,16 @@
-#banner {
-  background-image: url("../images/horror_banner.jpg");
-  height: 50%;
-  width: 100%;
-  background-repeat: repeat;
-}
-
 .navbar-brand {
     position: relative;
     min-height: 50px;
     margin-bottom: 20px;
     border: 1px solid transparent;
+}
+
+#banner {
+  background-image: url("../images/horror_banner.jpg");
+  height: 50%;
+  width: 100%;
+  position: relative;
+  background-repeat: repeat;
 }
 
 #headerText {
@@ -44,7 +45,6 @@ h3 {
   height: 100px;
 
 }
-/* Start all CSS below this line  */
 
 img {
   max-width:100%;
@@ -52,7 +52,7 @@ img {
 }
 
 
- .streamingTitles {
+.streamingTitles {
   max-width:05%;
   height:auto;
 }
