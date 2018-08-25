@@ -1,0 +1,74 @@
+<!-- dev  -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Movie Match</title>
+</head>
+
+<body>
+  <!-- If you are front end you are welcome to change everything. This is just a template  -->
+  <div class="container">
+    <p>Sign up form</p>
+
+
+    <!-- Row 3  -->
+    <div class="row">
+      <div class="col-lg-4">
+      </div>
+      <div class="col-lg-4">
+        <!-- action="" -->
+        <form>
+          <!-- <form action="/Users/simmigonflagg/GeorgiaTech/movieMatcher/sites/home.html"> -->
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" value="testing@tesing.com">
+            <small id="email" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" value="123456" class="form-control" id="passsword1" placeholder="Password">
+          </div>
+                  <div class="form-group">
+            <label for="exampleInputPassword1">Password again</label>
+            <input type="password" value="123456" class="form-control" id="password2" placeholder="Password">
+          </div>
+          <!-- <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+          <button type="submit" id="validate" class="btn btn-primary">signup</button>
+          <button type="submit" id="cancel" class="btn btn-primary">cancel</button>
+          <!-- <button type="submit" id="signup" class="btn btn-primary">Sign up</button> -->
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--  End of all rows -->
+
+  <!-- jQuery -->
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+  <!-- Begin our custom JavaScript -->
+  <!-- Order matters here -->
+  <!-- 1 -->
+  <script src="../database/config.js"></script>
+  <!-- 2 -->
+  <script src="../js/validation.js"></script>
+  <script src="../js/login.js"></script>
+  <!-- 3 -->
+  
+  <!-- 4 -->
+
+
+
+</body>
+
+</html>
