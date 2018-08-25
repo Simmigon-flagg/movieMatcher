@@ -1,4 +1,3 @@
-alert("Sign up");
 console.log("Signup");
 // Initialize Firebase
 
@@ -19,8 +18,8 @@ let signup = document.getElementById('sign-up-validate');
 signup.addEventListener('click', (ev) => {
     let email = document.getElementById('signupemail').value;
     let password = document.getElementById('passsword1').value;
+ 
     ev.preventDefault();
-    console.log(email, password);
     firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -28,6 +27,10 @@ signup.addEventListener('click', (ev) => {
 
         var errorMessage = error.message;
         console.log(errorMessage);
+
         // ...
     });
+    if (true) {
+        window.location.href = 'home.html';
+    }
 });
