@@ -13,12 +13,12 @@ var config = {
 firebase.initializeApp(config);
 
 //Getting the Email/Password and Signin button from the the inputs above.
-let signIn = document.getElementById('login');
+let signup = document.getElementById('sign-up-validate');
 
 //Listening on thesignIn button click.
-signIn.addEventListener('click', (ev) => {
-    let email = document.getElementById('exampleInputEmail3').value;
-    let password = document.getElementById('exampleInputPassword3').value;
+signup.addEventListener('click', (ev) => {
+    let email = document.getElementById('signupemail').value;
+    let password = document.getElementById('passsword1').value;
     ev.preventDefault();
     console.log(email, password);
     firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
