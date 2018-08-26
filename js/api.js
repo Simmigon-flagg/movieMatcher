@@ -12,7 +12,7 @@ function searchMovie(movie) {
     headers: { "X-Mashape-Key": "ETvaxKZbFhmshL3jAAZP4Ylhx0iYp1v9LNHjsnY3CSBvSlVwgt" }
 
   }).then(function (response) {
-
+    $("#movies").empty();
     var count = 0;
     var result = response.results;
     console.log(result);
@@ -30,9 +30,9 @@ function searchMovie(movie) {
       topicDIV.append(headerText);
       var streaming = result[index].locations;
       $.each(streaming, function (index, value) {
-  
-        var movieStream = $("<a href=" + streaming[index].url + ">").text(streaming[index].display_name +"    |    ");
-      
+
+        var movieStream = $("<a href=" + streaming[index].url + ">").text(streaming[index].display_name + "    |    ");
+
         topicDIV.append(movieStream);
 
       });
