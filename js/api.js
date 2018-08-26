@@ -25,21 +25,24 @@ function searchMovie(movie) {
       var topicDIV = $("<p>");
       // Creating a paragraph tag with the result item's rating
       var title = $("<p>").text("Title: " + result[index].name);
-      var headerText = $("<p>").text("Streaming Platform:");
+
+      var topicImage = $("<img>");
+      topicImage.attr("src", result[index].picture);
       topicDIV.append(title);
-      topicDIV.append(headerText);
+      topicDIV.append(topicImage);
+
       var streaming = result[index].locations;
+      var headerText = $("<p>").text("Streaming Platform:");
+      topicDIV.append(headerText);
       $.each(streaming, function (index, value) {
         var icon = $("<img>");
         icon.attr("src", streaming[index].icon);
         topicDIV.append(icon);
-        
+
       });
 
-      var topicImage = $("<img>");
-      topicImage.attr("src", result[index].picture);
-      topicDIV.append(topicImage);
       $("#movies").prepend(topicDIV);
+
     });
 
     // $("#buttons-view").html("");
@@ -99,4 +102,6 @@ $("#searchapidata").on("click", function (event) {
 
   // Running the  function (passing in the movie as argument)
   searchMovie(inputMovie);
+  $("#searchterm").val("");
+
 });
