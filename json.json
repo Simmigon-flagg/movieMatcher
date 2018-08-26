@@ -1,0 +1,111 @@
+{
+    "status_code": 200,
+    "updated": "2018-08-26T03:03:48+0100",
+    "term": "superman",
+    "results": [
+        {
+            "picture": "https://utellyassets2-7.imgix.net/2/Open/Warner_Home_Video_892/Program/405551/_4by3/SupermanTheMovie_PA12.jpg?fit=crop&auto=compress&crop=faces,top",
+            "name": "Superman",
+            "locations": [
+                {
+                    "display_name": "iTunes",
+                    "name": "ITunesUS",
+                    "url": "https://itunes.apple.com/us/movie/superman/id272810065?uo=5&at=1l3v7yf",
+                    "id": "58c141a37588d57a8e22dd54",
+                    "icon": "https://utellyassets7.imgix.net/locations_icons/utelly/black/ITunesUS.png?&w=92&auto=compress&app_version=5s2gpuod4j-996"
+                }
+            ],
+            "weight": 362,
+            "id": "588c35f8ebb7f93b24dd9c27"
+        },
+        {
+            "picture": "https://utellyassets2-8.imgix.net/2/Open/Warner_Brothers_360/Program/22423615/_2by1/BatmanVSupermanDawnOfJustice_PA1.jpg?fit=crop&auto=compress&crop=faces,top",
+            "name": "Batman v Superman: Dawn of Justice",
+            "locations": [
+                {
+                    "display_name": "iTunes",
+                    "name": "ITunesUS",
+                    "url": "https://itunes.apple.com/us/movie/batman-v-superman-dawn-of-justice/id1092464213?uo=5&at=1l3v7yf",
+                    "id": "58c141a37588d57a8e22dd54",
+                    "icon": "https://utellyassets7.imgix.net/locations_icons/utelly/black/ITunesUS.png?&w=92&auto=compress&app_version=5s2gpuod4j-996"
+                },
+                {
+                    "display_name": "Amazon Instant",
+                    "name": "AmazonUS",
+                    "url": "http://www.amazon.com/gp/product/B01DAWJ7C6?tag=utellycom00-21",
+                    "id": "58c141a37588d57a9722dd54",
+                    "icon": "https://utellyassets7.imgix.net/locations_icons/utelly/black/AmazonUS.png?&w=92&auto=compress&app_version=5s2gpuod4j-996"
+                }
+            ],
+            "weight": 430,
+            "id": "5791c5caebb7f961e5155a6b"
+        },
+        {
+            "picture": "https://utellyassets2-9.imgix.net/2/Open/Warner_Brothers_360/Program/22423615/_2by1/BatmanVSupermanDawnOfJustice_PA1.jpg?fit=crop&auto=compress&crop=faces,top",
+            "name": "Batman v Superman: Dawn of Justice: Ultimate Edition",
+            "locations": [
+                {
+                    "display_name": "iTunes",
+                    "name": "ITunesUS",
+                    "url": "https://itunes.apple.com/us/movie/batman-v-superman-dawn-of-justice-ultimate-edition/id1115999400?uo=5&at=1l3v7yf",
+                    "id": "58c141a37588d57a8e22dd54",
+                    "icon": "https://utellyassets7.imgix.net/locations_icons/utelly/black/ITunesUS.png?&w=92&auto=compress&app_version=5s2gpuod4j-996"
+                },
+                {
+                    "display_name": "Amazon Instant",
+                    "name": "AmazonUS",
+                    "url": "http://www.amazon.com/gp/product/B01DCQPX9G?tag=utellycom00-21",
+                    "id": "58c141a37588d57a9722dd54",
+                    "icon": "https://utellyassets7.imgix.net/locations_icons/utelly/black/AmazonUS.png?&w=92&auto=compress&app_version=5s2gpuod4j-996"
+                }
+            ],
+            "weight": 429,
+            "id": "5995eef6ebb7f96764b6fe4e"
+        },
+        {
+            "picture": "https://utellyassets2-10.imgix.net/2/Open/Warner%20Brothers%20Distribution/Superman%20The%20Animated%20Series/superman-animated-series-2-to-1-image.jpg?fit=crop&auto=compress&crop=faces,top",
+            "name": "Superman: The Animated Series",
+            "locations": [
+                {
+                    "display_name": "Amazon Instant",
+                    "name": "AmazonUS",
+                    "url": "http://www.amazon.com/gp/product/B001BY19NG?tag=utellycom00-21",
+                    "id": "58c141a37588d57a9722dd54",
+                    "icon": "https://utellyassets7.imgix.net/locations_icons/utelly/black/AmazonUS.png?&w=92&auto=compress&app_version=5s2gpuod4j-996"
+                },
+                {
+                    "display_name": "iTunes",
+                    "name": "ITunesUS",
+                    "url": "https://itunes.apple.com/us/tv-season/the-main-man-pt-1/id283035973?i=283175033&uo=5&at=1l3v7yf",
+                    "id": "58c141a37588d57a8e22dd54",
+                    "icon": "https://utellyassets7.imgix.net/locations_icons/utelly/black/ITunesUS.png?&w=92&auto=compress&app_version=5s2gpuod4j-996"
+                },
+                {
+                    "display_name": "Amazon Prime",
+                    "name": "AmazonPrimeUS",
+                    "url": "http://www.amazon.com/gp/product/B001BY19NG?tag=utellycom00-21",
+                    "id": "58c16ea67588d561abb0ab3a",
+                    "icon": "https://utellyassets7.imgix.net/locations_icons/utelly/black/AmazonPrimeUS.png?&w=92&auto=compress&app_version=5s2gpuod4j-996"
+                }
+            ],
+            "weight": 373,
+            "id": "57633b25ebb7f956559d5023"
+        },
+        {
+            "picture": "https://utellyassets2-8.imgix.net/2/Open/Warner_Home_Video_892/Program/405551/_4by3/SupermanTheMovie_PA12.jpg?fit=crop&auto=compress&crop=faces,top",
+            "name": "Superman: The Movie (Special Edition)",
+            "locations": [
+                {
+                    "display_name": "iTunes",
+                    "name": "ITunesUS",
+                    "url": "https://itunes.apple.com/us/movie/superman-the-movie-special-edition/id297649712?uo=5&at=1l3v7yf",
+                    "id": "58c141a37588d57a8e22dd54",
+                    "icon": "https://utellyassets7.imgix.net/locations_icons/utelly/black/ITunesUS.png?&w=92&auto=compress&app_version=5s2gpuod4j-996"
+                }
+            ],
+            "weight": 363,
+            "id": "5b65438c593bf2002fc49b12"
+        }
+    ],
+    "variant": "utelly"
+}
