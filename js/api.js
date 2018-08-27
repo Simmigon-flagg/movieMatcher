@@ -25,19 +25,27 @@ function searchMovie(movie) {
       var topicDIV = $("<p>");
       // Creating a paragraph tag with the result item's rating
       var title = $("<p>").text("Title: " + result[index].name);
-
+      //Poster
       var topicImage = $("<img>");
+      //Poster attr
       topicImage.attr("src", result[index].picture);
+      //Add title first
       topicDIV.append(title);
+      //Add image
       topicDIV.append(topicImage);
 
       var streaming = result[index].locations;
+
       var headerText = $("<p>").text("Streaming Platform:");
+      //Add streaming header
       topicDIV.append(headerText);
+
       $.each(streaming, function (index, value) {
         var icon = $("<img>");
         icon.attr("src", streaming[index].icon);
+        //Add icon
         topicDIV.append(icon);
+  
 
       });
 
