@@ -1,11 +1,13 @@
 
 
 // constructing a queryURL variable we will use instead of the literal string inside of the ajax method
+var movieTitleRelease = [];
+
 
 
 function searchDate(movie) {
   
-  var movieTitleRelease = [];
+ 
   var queryURL = "https://www.omdbapi.com/?s=" + movie + "&y=&plot=short&apikey=trilogy";
     
       // Creating an AJAX call for the specific movie button being clicked
@@ -23,7 +25,6 @@ function searchDate(movie) {
          console.log(movieReleaseDate);
          movieTitleRelease.push(movieList);
          movieTitleRelease.push(movieReleaseDate);
-         return(movieTitleRelease);
         }
       });
   
@@ -43,7 +44,7 @@ function searchMovie(movie) {
     $("#movies").empty();
     var count = 0;
     var result = response.results;
-    var releaseYear = 0;
+    var releaseYear;
     var j = 0;
 
     console.log(result);
