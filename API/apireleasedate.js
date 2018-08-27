@@ -2,6 +2,7 @@
 
 // constructing a queryURL variable we will use instead of the literal string inside of the ajax method
 var movieTitleRelease = [];
+var movieNameRelease = [];
 
 
 
@@ -15,22 +16,20 @@ function searchDate(movie) {
         url: queryURL,
         method: "GET"
       }).then(function(response) { 
-      console.log(response);
+     // console.log(response);
       
       var movieResults = response.Search;
        for (i=0; i < movieResults.length; i++) {
          var movieList = movieResults[i].Title;
          var movieReleaseDate = movieResults[i].Year;
-         console.log(movieList);
-         console.log(movieReleaseDate);
+      //   console.log(movieList);
+      //   console.log(movieReleaseDate);
          movieTitleRelease.push(movieList);
          movieTitleRelease.push(movieReleaseDate);
         }
       });
-  
-      
+        
     }
-
     
 function searchMovie(movie) {
   var queryURL = "https://utelly-tv-shows-and-movies-availability-v1.p.mashape.com/lookup?country=us&term=" + movie + "";
@@ -56,7 +55,7 @@ function searchMovie(movie) {
       // console.log(index + ": " + value);
       var topicDIV = $("<p>");
       // Creating a paragraph tag with the result item's rating
-      var title = $("<p>").text("Title: " + result[index].name);
+      var title = $("<p>").text("Title: " + result[index].name.toUpperCase());
 
       var topicImage = $("<img>");
       topicImage.attr("src", result[index].picture);
@@ -65,20 +64,35 @@ function searchMovie(movie) {
 
       var streaming = result[index].locations;
       var headerText = $("<p>").text("Streaming Platform:");
-      topicDIV.append(headerText);
+    
+     
+//for comparison
+      for (var j=0; j < movieTitleRelease.length ; j++) {
+       // console.log("moviename from OD" +movieTitleRelease[j]);
+       // console.log("moviename" + result[index].name);
+   
+        if (movieTitleRelease[j].toLowerCase() === result[index].name.toLowerCase()) {
+          releaseYear = movieTitleRelease[j+1];
+          var Year = $("<p>").text("Year: " + releaseYear);
+          topicDIV.append(Year);
+          break;
+          console.log(releaseYear);
+        }
+        
+        if (movieTitleRelease.length === j+1) {
+        
+          var Year = $("<p>").text("Year: NA");
+          topicDIV.append(Year);
 
-      for (let j=0; j < movieTitleRelease.length; j++) {
-        if (movieTitleRelease[j] === result[index].name) {
-          releaseYear = movieTitleRelase[j+1];
-          console.log(releaseYear);
-        }
-        else {
-          releaseYear = 'NA';
-          console.log(releaseYear);
-        }
+          
+
+        } 
+
 
       };
-      
+      var headerText = $("<p>").text("Streaming Platform:");
+      topicDIV.append(headerText);
+      // 
 
       $.each(streaming, function (index, value) {
         var icon = $("<img>");
@@ -90,7 +104,6 @@ function searchMovie(movie) {
       $("#movies").prepend(topicDIV);
 
     });
-
  
 
   });
@@ -106,7 +119,15 @@ $("#searchapidata").on("click", function (event) {
 
   // Running the  function (passing in the movie as argument)
   searchDate(inputMovie);
+
+     //  Set the button alert's timeout to run three seconds after the function's called.
+     delayButtonAlert = setTimeout(function() {
+      
+    }, 3000);
+
   searchMovie(inputMovie);
  // $("#searchterm").val("");
 
 });
+
+
