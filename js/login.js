@@ -15,13 +15,14 @@ signIn.addEventListener('click', (ev) => {
         console.log(errorCode);
 
         var errorMessage = error.message;
-        console.log(errorMessage);
+        alert(errorMessage);
+
         // ...
     });
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then(user => {
             //Handling the successful authentication.
-            window.location.href = 'sites/home.html';
+             window.location.href = 'sites/home.html';
 
             //var user = firebase.auth().currentUser;
 
