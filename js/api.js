@@ -98,7 +98,7 @@ function searchMovie(movie) {
     
       $.each(streaming, function (index, value) {
         //add image class to where to where to watch
-        var topicImage = $('<img class="image">');
+        var topicImage = $('<img class="stream-icon">');
         topicImage.attr("src", streaming[index].icon);
 
         var movieStream = $("<a>");
