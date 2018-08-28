@@ -97,15 +97,16 @@ function searchMovie(movie) {
 
     
       $.each(streaming, function (index, value) {
-        var topicImage = $("<img>");
+        //add image class to where to where to watch
+        var topicImage = $('<img class="image">');
         topicImage.attr("src", streaming[index].icon);
 
         var movieStream = $("<a>");
         movieStream.attr("href", streaming[index].url);
 
         movieStream.append(topicImage);
-
         topicDIV.append(movieStream);
+   
         // topicDIV.append(movieStream);
       });
 
