@@ -83,7 +83,6 @@ function searchMovie(movie) {
         
           var Year = $("<p>").text("Year: NA");
           topicDIV.append(Year);
-
           
 
         } 
@@ -94,12 +93,23 @@ function searchMovie(movie) {
       topicDIV.append(headerText);
       // 
 
-      $.each(streaming, function (index, value) {
-        var icon = $("<img>");
-        icon.attr("src", streaming[index].icon ," ");
-        topicDIV.append(icon);
+      var url = result[index].locations.url;
 
+    
+      $.each(streaming, function (index, value) {
+        var topicImage = $("<img>");
+        topicImage.attr("src", streaming[index].icon);
+
+        var movieStream = $("<a>");
+        movieStream.attr("href", streaming[index].url);
+
+        movieStream.append(topicImage);
+
+        topicDIV.append(movieStream);
+        // topicDIV.append(movieStream);
       });
+
+         
 
       $("#movies").prepend(topicDIV);
 
