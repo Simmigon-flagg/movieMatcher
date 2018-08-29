@@ -5,6 +5,11 @@
     border: 1px solid transparent;
 }
 
+p {
+  color: black;
+  font-size: 15px;
+}
+
 #banner {
   background-image: url("../images/horror_banner.jpg");
   height: 50%;
@@ -46,11 +51,18 @@ h3 {
 
 }
 
+.movie-container {
+  max-width: 25%;
+}
+
 img {
   max-width:100%;
   height:auto;
 }
 
+.stream-icon {
+  padding: 5px;
+}
 
 .streamingTitles {
   max-width:05%;
