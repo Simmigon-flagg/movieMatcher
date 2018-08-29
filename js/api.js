@@ -101,7 +101,7 @@ function searchMovie(movie) {
 
       //old school jQuery each() Method to loop results  get where to watch name, url, icon
       $.each(streaming, function (index, value) {
-
+    
         var streamingIcon = streaming[index].icon;
         var streamingHref = streaming[index].url;
         var topicImage = $('<img class="stream-icon">');
@@ -112,7 +112,6 @@ function searchMovie(movie) {
         movieStream.attr("href", streamingHref);
         movieStream.append(topicImage);
         topicDIV.append(movieStream);
-        // topicDIV.append(movieStream);
       });
   
    $("#movies").prepend(topicDIV);
