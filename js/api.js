@@ -130,16 +130,14 @@ $("#searchapidata").on("click", function (event) {
   // Storing the artist name
   var inputMovie = $("#searchterm").val().trim();
 
-  // Running the  function (passing in the movie as argument)
+  // call function to get year of movie
   searchDate(inputMovie);
 
   //Set the button alert's timeout to run three seconds after the function's called.
   delayButtonAlert = setTimeout(function() {
-     
-   }, 3000);
-
+  }, 3000);
+  // call function to get where to watch movie
   searchMovie(inputMovie);
- // $("#searchterm").val("");
 
 });
 
