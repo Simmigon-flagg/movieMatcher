@@ -61,7 +61,12 @@ function searchMovie(movie) {
     //                                "icon"
     
    var topicDIV = $("<p>");
-   var title = $("<p>").text("Title: " + result[index].name.toUpperCase());
+   topicDIV.addClass('moviegroup');
+   topicDIV.addClass('col-lg-4');
+
+   
+   var title = $("<p style='padding:auto;'>").text("Title: " + result[index].name.toUpperCase());
+
    var topicImage = $("<img>");
 
    topicImage.attr("src", result[index].picture);
@@ -76,6 +81,7 @@ function searchMovie(movie) {
       if (movieTitleRelease[j].toLowerCase() === result[index].name.toLowerCase()) {
         releaseYear = movieTitleRelease[j+1];
         var Year = $("<p>").text("Year: " + releaseYear);
+
         topicDIV.append(Year);
         //breaks the loop and continues executing the code after the loop 
         break;

@@ -26,6 +26,8 @@ body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   /* Typography */
   font-size: 18px;
+  background: black;
+  color: white;
 }
 h1 {
   color: white;
@@ -44,9 +46,12 @@ h2,h3 {
 .movie-container {
   max-width: 25%;
 }
+container{
+      margin-top: 100%;
+}
 img {
-  max-width:100%;
-  height:auto;
+  max-width:75%;
+  height: auto;  
 }
 .stream-icon {
   padding: 5px;
@@ -57,5 +62,16 @@ img {
 }
 #movies {
   /*Padding for banner to allow movies results to appear below image*/
-  margin-top: 55%;
+  /* margin-top: 55%;
+  padding-left: 25%;  */
+  
+  display: block;
+}
+.moviegroup{
+    max-width:25%;
+    height:auto;
+    float: left;
+    padding-left: auto;   
+      margin-top: 15%;
+
 }
