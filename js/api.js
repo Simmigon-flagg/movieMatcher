@@ -2,6 +2,29 @@
 var movieTitleRelease = [];
 
 
+
+function storeSearch(movie) {
+
+  var config = {
+    apiKey: "AIzaSyC-JOyihZLDnAjsC0yJ2-pThK7bkOADU00",
+    authDomain: "moviematch-2a14e.firebaseapp.com",
+    databaseURL: "https://moviematch-2a14e.firebaseio.com",
+    projectId: "moviematch-2a14e",
+    storageBucket: "moviematch-2a14e.appspot.com",
+    messagingSenderId: "804612184896"
+  };
+
+  firebase.initializeApp(config);
+  var searchDatabase = firebase.database();
+  var searchName = movie;
+
+  searchDatabase.ref().push({
+    searchName: searchName
+  });
+ 
+
+  }
+
 //Function  AJAX query to omdbapi and capture movie title, and year of release
 //Input movie - search term
 function searchDate(movie) {
@@ -65,7 +88,7 @@ function searchMovie(movie) {
    topicDIV.addClass('col-lg-4');
 
    
-   var title = $("<p style='padding:auto;'>").text(result[index].name.toUpperCase());
+   var title = $("<p style='padding:auto;'>").text("Title: " + result[index].name.toUpperCase());
 
    var topicImage = $("<img>");
 
@@ -121,19 +144,26 @@ function searchMovie(movie) {
       });
   
    $("#movies").prepend(topicDIV);
+  
+  
 
    });
 
   });
 
+  $("#searchterm").val("");
+  
 }
 
 // Event handler for user clicking the select movie button
 $("#searchapidata").on("click", function (event) {
   // Preventing the button from trying to submit the form
   event.preventDefault();
+
+
   // Storing the artist name
   var inputMovie = $("#searchterm").val().trim();
+
 
   // call function to get year of movie
   searchDate(inputMovie);
@@ -143,6 +173,13 @@ $("#searchapidata").on("click", function (event) {
   }, 3000);
   // call function to get where to watch movie
   searchMovie(inputMovie);
+  
+  //store search value to firebase
+  storeSearch(inputMovie);
+  
 
 });
+
+
+
 
