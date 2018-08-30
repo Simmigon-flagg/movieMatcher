@@ -45,10 +45,10 @@ h2,h3 {
 }
 .movie-container {
   max-width: 25%;
+   float: left;
 }
 container{
-       margin: auto; 
-
+    float: left;
 }
 img {
   max-width:75%;
@@ -62,6 +62,7 @@ img {
   height:auto;
 }
 #movies {
+  float: left;
   /*Padding for banner to allow movies results to appear below image*/
   /* margin-top: 55%;
   padding-left: 25%;  */
@@ -73,7 +74,14 @@ img {
     max-width:25%;
     height:auto;
   
-
-  
-
+}
+  #myformgroup{
+    margin-right: 15%;
+    background: green;
+}
+  .topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
 }

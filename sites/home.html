@@ -27,38 +27,51 @@
 
 
 <body>
-  
-    <!-- Begin Navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid navbar-header">          
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+  <!-- Begin Navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+        aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
           </button><a class="navbar-brand" href="#">Movie Matcher</a>
-      </div>
-  
-  <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="navbar-collapse collapse " id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
-          <ul class="nav navbar-nav">
-            <li><a href="https://github.com/Simmigon-flagg/movieMatcher" target="_blank">GitHub Repo</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <form class="form-inline my-2">
-              <!-- placeholder="Enter Movie Name Here" -->
-                <input type="text" id="searchterm" value="superman"  class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-                <button class="btn btn-success" id="searchapidata">Search</button>
-            </form>
-          </ul>
-      </div>
-  <!-- End navbar-->    
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse " id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
+      <ul class="nav navbar-nav">
+        <li><a href="https://github.com/Simmigon-flagg/movieMatcher" target="_blank">GitHub Repo</a></li>
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <form id="myformgroup">
+          <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col">
+            </div>
+          </div>
+         
+        </form>
+      </ul> -->
+      <div class="topright">
+        <form class="form-inline my-2 my-lg-0">
+          <input type="text" id="searchterm" value="superman" class="form-control mr-sm-2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+          <button class="btn btn-success  my-2 my-sm-0" id="searchapidata" type="submit">Search</button>
+        </form>
+      <div>
+
+        </div>
+        <!-- End navbar-->
   </nav>
-<hr>
-<!--Begin Scary Image-->
-<div class="container row col-lg-12" id="scary_banner">
-<!-- End Scary Banner-->   
-</div>
-<hr>
-<!--Container for Returned Images-->
+  <hr>
+  <!--Begin Scary Image-->
+  <div class="container row col-lg-12" id="scary_banner">
+    <!-- End Scary Banner-->
+  </div>
+  <hr>
+  <!--Container for Returned Images-->
   <div class="container ">
     <div class="row" id="movies"></div>
   </div>
