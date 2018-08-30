@@ -47,7 +47,8 @@ h2,h3 {
   max-width: 25%;
 }
 container{
-      margin-top: 100%;
+       margin: auto; 
+
 }
 img {
   max-width:75%;
@@ -68,10 +69,11 @@ img {
   display: block;
 }
 .moviegroup{
+    margin-top: 15%;
     max-width:25%;
     height:auto;
-    float: left;
-    padding-left: auto;   
-      margin-top: 15%;
+  
+
+  
 
 }
