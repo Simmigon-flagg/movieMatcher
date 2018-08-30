@@ -65,7 +65,7 @@ function searchMovie(movie) {
    topicDIV.addClass('col-lg-4');
 
    
-   var title = $("<p style='padding:auto;'>").text("Title: " + result[index].name.toUpperCase());
+   var title = $("<p style='padding:auto;'>").text(result[index].name.toUpperCase());
 
    var topicImage = $("<img>");
 
